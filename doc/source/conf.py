@@ -138,10 +138,26 @@ html_theme = "pydata_sphinx_theme"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-
 html_theme_options = {
-    "github_url": "https://github.com/arviz-devs/arviz",
-    "twitter_url": "https://twitter.com/arviz_devs",
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/arviz-devs/arviz",
+            "icon": "fab fa-github-square",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/arviz_devs",
+            "icon": "fab fa-twitter-square",
+        },
+    ],
+    "use_edit_page_button": True,
+}
+html_context = {
+    "github_user": "https://github.com/arviz-devs",
+    "github_repo": "https://github.com/arviz-devs/arviz",
+    "github_version": "main",
+    "doc_path": "doc/source/",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
